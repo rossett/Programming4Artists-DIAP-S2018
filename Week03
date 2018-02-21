@@ -1,0 +1,30 @@
+function setup() {
+    createCanvas(windowWidth, windowHeight);
+}
+
+function draw() {
+    background(243, 98, 145);
+    fill(255);
+    // while (i < 500) {
+    //    i++;  }
+    // if (i => 500) {
+
+    for (var i = 0; i < width; i += 55) {
+        for (var j = 0; j < height; j += 55) {
+            if (dist(mouseX, mouseY, i, j) < 25) {
+                fill(23, 98, 145);
+            } else {
+                fill(255, 0, 0)
+            }
+            // if(var i % 2 == 0); {
+
+            ellipse(i, j, 50, 50);
+
+        }
+    }
+
+}
+
+function windowResized(){
+    resizeCanvas(windowWidth, windowHeight)
+}
